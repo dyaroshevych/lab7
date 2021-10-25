@@ -24,7 +24,7 @@ class FlowerBucketTest {
 
     @Test
     void equals() {
-        assertTrue(flowerBucket1.equals(flowerBucket2));
+        assertFalse(flowerBucket1.equals(flowerBucket2));
     }
 
     @Test
