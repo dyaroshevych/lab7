@@ -28,7 +28,7 @@ class StoreTest {
 
     @Test
     void search() {
-        assertTrue(store1.equals(flowerBucket1));
-        assertFalse(store2.equals(flowerBucket1));
+        assertTrue(store1.search(flowerBucket1));
+        assertFalse(store2.search(flowerBucket1));
     }
 }
