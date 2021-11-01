@@ -1,3 +1,9 @@
+package flowers;
+
+import flowers.Color;
+import flowers.Flower;
+import flowers.FlowerPack;
+import flowers.Type;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;

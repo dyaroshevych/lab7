@@ -1,8 +1,12 @@
-public class FlowerBucket {
+package flowers;
+
+import java.util.ArrayList;
+
+public class FlowerBucket extends Item {
     FlowerPack[] flowerPacks;
     CalculateFlowerBucketPrice calculatePrice;
 
-    FlowerBucket(FlowerPack[] flowerPacks) {
+    public FlowerBucket(FlowerPack[] flowerPacks) {
         this.flowerPacks = flowerPacks;
     }
 
@@ -20,9 +24,22 @@ public class FlowerBucket {
         return true;
     }
 
-    public int price() {
+    @Override
+    public double price() {
         return this.calculatePrice.calculate(this.flowerPacks);
     }
+
+    @Override
+    public String getDescription() {
+        ArrayList<String> packsInfo = new ArrayList<String>();
+
+        for (FlowerPack pack: flowerPacks) {
+            packsInfo.add(pack.getDescription());
+        }
+
+        return "Bucket with following packs:\n" + String.join("\n", packsInfo);
+    }
+
 
 }
 

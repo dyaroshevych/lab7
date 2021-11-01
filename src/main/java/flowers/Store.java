@@ -1,3 +1,5 @@
+package flowers;
+
 public class Store {
     FlowerBucket[] flowerBuckets;
 

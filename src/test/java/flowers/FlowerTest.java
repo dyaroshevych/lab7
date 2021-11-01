@@ -1,3 +1,8 @@
+package flowers;
+
+import flowers.Color;
+import flowers.Flower;
+import flowers.Type;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -27,6 +32,6 @@ class FlowerTest {
 
     @Test
     void getPrice() {
-        assertEquals(3, flower.getPrice());
+        assertEquals(3, flower.price());
     }
 }
