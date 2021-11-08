@@ -1,3 +1,5 @@
+package orders;
+
 import decorators.BasketDecorator;
 import decorators.PaperDecorator;
 import decorators.RibbonDecorator;
